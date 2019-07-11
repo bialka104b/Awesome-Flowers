@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600i|Pacifico');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://i.imgur.com/6IE8Vkt.png') repeat center;
+    font-family: 'Open Sans', 'sans-serif';
+    width:100vw;
+}
+
+li {
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/****HEADER****/
+header {
+    position: fixed;
+    top: 0;
+    min-height: 50px;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    font-size: 30px;
+    width: 100vw;
+    font-family: 'Pacifico', 'cursive';
+    z-index:1;
+}
+#page-wrapper {
+    position: relative;
+    background-color: hsla(271,77%,29%,0.3);
+    width:100vw;
+    margin:auto;
+}
+.logo {
+    width: 50vw;
+    padding-left:0;
+    margin-left: 0;
+    position: static;
+}
+.logo img {
+    width: 20%;
+    height: 20%;
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    border: 2px solid hsla(271,77%,29%,1);
+    border-radius: 0 0 30px 30px;
+}
+
+nav {font-weight: 400;}
+
+#nav-bar ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#nav-bar li {
+    border: 2px solid hsla(271,77%,29%,1);
+    border-radius: 5px;
+    padding: 0.5% 2%;
+}
+#nav-bar li:hover {
+    background-color: hotpink;
+    transition: background-color 1.5s;
+}
+.nav-link {}
+.nav-link:hover {}
+@media (max-width:700px) {
+  .logo img {
+    border-radius:30px;
+  }
+  #nav-bar {
+    font-size:1.1rem;
+  }
+  header {}
+}
+/****SEKCJE****/
+.sekcje {
+    width: 100vw;
+    margin: 50px auto 0 auto;
+    z-index: 2;
+    padding: 70px 30px 20px 30px;
+}
+/****Sekcja1****/
+#h1 {
+  display:block;
+  padding: 3% 5%;
+  margin:20px auto;
+}
+#h1 div {
+  text-align:center;
+  font-size:1.8rem;
+  width:60%;
+  margin:0 20%;
+}
+@media (max-width:1050px) {
+  #h1 div {
+    width:90%;
+    margin:auto;
+    font-size:1.3rem
+  }
+}
+@media (max-width:600px) {
+  .sekcje {
+    margin: 15px auto 0 auto;
+  }
+}
+
+/****Sekcja2****/
+.produkty {
+    display:block;
+    padding: 3% 5%;
+    margin:20px auto;
+    border:2px solid violet;
+}
+.produkty1 {
+}
+.produkty h3 {
+  font-size:2rem;
+  font-family:Pacifico;
+  text-align: center;
+}
+.opis-produkty {
+    text-align:center;
+}
+.produkty-img {
+  margin:0 0;
+}
+.produkty-img img {
+  width:90%;
+  height:90%;
+  border:2px solid violet;
+}
+.tekst-produkty {
+   display:block;
+}
+.tekst-produkty h2 {
+  height:auto;
+}
+@media (min-width:1351px) {
+  .opis-produkty {
+    display:inline-block;
+    height:auto;
+    width:33%;
+    padding-top:5px;
+    margin-top:0;
+  }
+  .tekst-produkty h2 {
+  height:70px;
+}
+  .tekst-produkty {padding:2%;}
+  .produkty-img {
+    height:400px;
+  }
+  
+}
+@media (min-width:1300px) {
+  #br3, #br4, #br5, #br6 {display:none;}
+}
+@media (min-width:1250px) {
+  #br1, #br2 {display:none;}
+}
+@media (min-width:1200px) {
+  .opis-produkty {
+    display:inline-block;
+    height:auto;
+    width:33%;
+    padding-top:5px;
+    margin-top:0;
+    font-size:1rem;
+  }
+  .tekst-produkty {padding:1%;}
+  .tekst-produkty h2 {
+  height:70px;
+}
+  .produkty-img {
+    height:400px;
+  }
+  #br3, #br4, #br5, #br6 {display:none;}
+}
+@media (max-width:1199px) {
+  .opis-produkty {
+    margin:3% auto;
+  }
+  .produkty-img img {
+  width:60%;
+  height:60%;
+  border:2px solid violet;
+}
+  #br1, #br2, #br3, #br4, #br5, #br6 {
+    display:none;
+  }
+  .tekst-produkty {
+    padding:1% 3%;
+    margin: 1%;
+  }
+  }
+@media (max-width:600px) {
+    .tekst-produkty  {
+      font-size:1rem;
+    }
+}
+/****Sekcja3 Cennik****/
+#cennik {
+  display:block;
+  padding: 3% 5%;
+  margin:20px auto;
+  border:2px solid violet;
+}
+#cennik p {
+  text-align:center;
+  margin: 0 0 3px 0;
+  font-size:2rem;
+  font-family: 'Pacifico'
+}
+.cennik {
+  display:inline-block;
+  width:33%;
+  text-align:center;
+  padding: 2% 0%;
+}
+.cennik h3 {
+  font-size:1rem;
+}
+.cennik-img img {
+  height:20%;
+  width:90%;
+  border:2px solid violet;
+}
+@media (max-width:981px) {
+  .cennik {
+    display:block;
+    width:100%;
+  }
+  .cennik-img img {
+    width:60%;
+    height:60%;
+  }
+}
+/****Sekcja4*****/
+#sekcja-video {
+  text-align: center;
+  display:block;
+  padding: 3% 5%;
+  margin:5px auto;
+}
+.form {
+  display:block;
+  margin-bottom:20px
+}
+#form {
+  text-align:center;
+  width:300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#email {
+  display:block;
+  width:300px;
+  height:50px;
+  margin-bottom:10px;
+  border:2px solid black;
+  text-align:center;
+  font-size:1.2rem;
+}
+#submit {
+  display:block;
+  width:300px;
+  height:50px;
+  margin-bottom:10px;
+  border:2px solid black;
+  background-color:pink;
+  font-family:Pacifico;
+  font-size:1.2rem;
+}
+@media (min-width:900px) {
+  .embed-responsive iframe {
+    width:600px;
+    height:400px
+  }
+}
+/****STOPKA****/
+footer {
+  width:100vw;
+  height:50px;
+  background-color:pink;
+  text-align:center;
+  padding:10px;
+  font-family:Pacifico;
+  font-size:1.2em;
+}
+footer span {
+  height:25px;
+  margin: auto;}
+@media (max-width:600px) {
+  footer {
+    height:100px;
+    margin:auto 10px;
+  }
+}
